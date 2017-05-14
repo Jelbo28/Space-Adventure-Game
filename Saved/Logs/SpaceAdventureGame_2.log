@@ -1,0 +1,660 @@
+﻿Log file open, 05/14/17 10:43:02
+LogInit:Display: Running engine for game: SpaceAdventureGame
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1934895530) SRandInit(1934895530).
+LogTaskGraph: Started task graph with 5 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.091181
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3416026
+LogInit: Engine Version: 4.15.2-3416026+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May  1 2017 13:11:28
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.14-14.43.04:114][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.14-14.43.04:114][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.14-14.43.04:139][  0]LogInit: Computer: JELBO
+[2017.05.14-14.43.04:139][  0]LogInit: User: Aram
+[2017.05.14-14.43.04:139][  0]LogInit: CPU Page size=65536, Cores=3
+[2017.05.14-14.43.04:139][  0]LogInit: High frequency timer resolution =3.244349 MHz
+[2017.05.14-14.43.04:140][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.05.14-14.43.04:140][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.14-14.43.04:140][  0]LogMemory: Process Physical Memory: 263.27 MB used, 263.27 MB peak
+[2017.05.14-14.43.04:140][  0]LogMemory: Process Virtual Memory: 262.24 MB used, 262.24 MB peak
+[2017.05.14-14.43.04:140][  0]LogMemory: Physical Memory: 7118.07 MB used,  9247.17 MB free, 16365.24 MB total
+[2017.05.14-14.43.04:140][  0]LogMemory: Virtual Memory: 644.36 MB used,  9247.17 MB free, 134217728.00 MB total
+[2017.05.14-14.43.04:327][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.05.14-14.43.05:592][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.14-14.43.05:666][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 550 Ti' (Feature Level 11_0)
+[2017.05.14-14.43.05:666][  0]LogD3D11RHI:       977/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.05.14-14.43.05:669][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.14-14.43.05:669][  0]LogD3D11RHI:       0/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.14-14.43.05:669][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.14-14.43.05:681][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.14-14.43.05:681][  0]LogD3D11RHI:     GPU DeviceId: 0x1244 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.14-14.43.05:681][  0]LogWindows: EnumDisplayDevices:
+[2017.05.14-14.43.05:681][  0]LogWindows:    0. 'NVIDIA GeForce GTX 550 Ti' (P:1 D:1)
+[2017.05.14-14.43.05:682][  0]LogWindows:    1. 'NVIDIA GeForce GTX 550 Ti' (P:0 D:1)
+[2017.05.14-14.43.05:682][  0]LogWindows: DebugString: FoundDriverCount:2 
+[2017.05.14-14.43.05:682][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 550 Ti
+[2017.05.14-14.43.05:682][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.05.14-14.43.05:682][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.05.14-14.43.05:682][  0]LogRHI: Texture pool is 684 MB (70% of 977 MB)
+[2017.05.14-14.43.05:717][  0]LogD3D11RHI:Warning: Timestamp queries are currently disabled on this hardware due to instability. Realtime GPU stats will not be available. You can override this behaviour by setting r.NVIDIATimestampWorkaround to 0
+[2017.05.14-14.43.05:720][  0]LogD3D11RHI: [Aftermath] Aftermath enabled but failed to initialize due to reason: DriverVersionNotSupported
+[2017.05.14-14.43.05:720][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.14-14.43.05:741][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2017.05.14-14.43.05:840][  0]LogShaderCompilers: Guid format shader working directory is -56 characters bigger than the processId version (../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Intermediate/Shaders/WorkingDirectory/6256/).
+[2017.05.14-14.43.05:841][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Aram/AppData/Local/Temp/UnrealShaderWorkingDir/CC0BE25F44D053F81CDD3BB96CEE93D1/'.
+[2017.05.14-14.43.05:841][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.14-14.43.08:324][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.14-14.43.08:440][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.14-14.43.08:558][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.14-14.43.08:674][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.14-14.43.08:790][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.14-14.43.08:917][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.14-14.43.09:075][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.14-14.43.09:223][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.14-14.43.09:345][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.14-14.43.09:487][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.14-14.43.09:619][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.14-14.43.09:746][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.14-14.43.09:887][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.14-14.43.10:008][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.14-14.43.10:147][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.14-14.43.10:382][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.14-14.43.10:382][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.14-14.43.10:462][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.14-14.43.10:648][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.14-14.43.10:728][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.14-14.43.10:866][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.14-14.43.11:001][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.14-14.43.11:118][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.14-14.43.11:234][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.14-14.43.11:234][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.14-14.43.12:183][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.14-14.43.12:287][  0]LogDerivedDataCache: Loaded boot cache 0.10s 50MB C:/Users/Aram/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.14-14.43.12:287][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Aram/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.14-14.43.12:287][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.14-14.43.12:287][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.14-14.43.12:287][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.14-14.43.12:287][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.14-14.43.12:314][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.14-14.43.12:327][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Aram/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.14-14.43.12:344][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.14-14.43.12:345][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.14-14.43.12:345][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.14-14.43.12:920][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.14-14.43.12:925][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.14-14.43.13:366][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.14-14.43.13:470][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.14-14.43.13:576][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.14-14.43.13:576][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.14-14.43.13:576][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.14-14.43.14:621][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: spaceadventuregame, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3909331600
+[2017.05.14-14.43.14:694][  0]LogAssetRegistry: FAssetRegistry took 0.0223 seconds to start up
+[2017.05.14-14.43.14:794][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.044358 seconds
+[2017.05.14-14.43.14:802][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.14-14.43.14:802][  0]LogUObjectAllocator: 7077024 out of 0 bytes used by permanent object pool.
+[2017.05.14-14.43.14:802][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.14-14.43.14:949][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.14-14.43.18:093][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.14-14.43.18:165][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.14-14.43.19:028][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.14-14.43.19:767][  0]SourceControl: Info Source control is disabled
+[2017.05.14-14.43.19:768][  0]SourceControl: Info Source control is disabled
+[2017.05.14-14.43.19:869][  0]SourceControl: Info Source control is disabled
+[2017.05.14-14.43.19:967][  0]SourceControl: Info Source control is disabled
+[2017.05.14-14.43.22:547][  0]LogEngine: Initializing Engine...
+[2017.05.14-14.43.22:817][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2017.05.14-14.43.22:998][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.14-14.43.22:998][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.14-14.43.23:288][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.14-14.43.23:304][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-14.43.23:324][  0]LogInit: FAudioDevice initialized.
+[2017.05.14-14.43.23:377][  0]LogDerivedDataCache: Saved boot cache 0.05s 50MB C:/Users/Aram/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.14-14.43.23:394][  0]LogInit: Texture streaming: Enabled
+[2017.05.14-14.43.23:609][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.14-14.43.23:791][  0]LogInit: Transaction tracking system initialized
+[2017.05.14-14.43.24:515][  0]BlueprintLog: New page: Editor Load
+[2017.05.14-14.43.26:399][  0]LocalizationService: Info Localization service is disabled
+[2017.05.14-14.43.27:796][  0]LogConsoleResponse:Display: 
+[2017.05.14-14.43.28:014][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.14-14.43.28:015][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.14-14.43.28:842][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/' took 0.02s
+[2017.05.14-14.43.30:204][  0]SourceControl: Info Source control is disabled
+[2017.05.14-14.43.30:205][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Maps/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.14-14.43.30:205][  0]LightingResults: New page: Lighting Build
+[2017.05.14-14.43.30:292][  0]MapCheck: New page: Map Check
+[2017.05.14-14.43.30:292][  0]LightingResults: New page: Lighting Build
+[2017.05.14-14.43.30:668][  0]LogAIModule: Creating AISystem for world TestMap
+[2017.05.14-14.43.30:705][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.14-14.43.30:706][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.14-14.43.30:782][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 75.805ms to complete.
+[2017.05.14-14.43.30:782][  0]LogFileHelpers: Loading map 'TestMap' took 0.578
+[2017.05.14-14.43.31:038][  0]LogCollectionManager: Loaded 0 collections in 0.002708 seconds
+[2017.05.14-14.43.31:167][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Collections/' took 0.01s
+[2017.05.14-14.43.31:167][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Developers/Aram/Collections/' took 0.01s
+[2017.05.14-14.43.31:167][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Collections/' took 0.01s
+[2017.05.14-14.43.31:167][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.05.14-14.43.31:186][  0]LogContentBrowser: Native class hierarchy populated in 0.0178 seconds. Added 2245 classes and 453 folders.
+[2017.05.14-14.43.31:323][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2017.05.14-14.43.31:387][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2017.05.14-14.43.31:473][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2017.05.14-14.43.31:562][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.14-14.43.31:572][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.05.14-14.43.31:684][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2017.05.14-14.43.31:684][  0]LogLoad: (Engine Initialization) Total time: 30.95 seconds
+[2017.05.14-14.43.31:684][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.18 seconds
+[2017.05.14-14.43.31:684][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.14-14.43.31:684][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.14-14.43.32:024][  0]LogOcInput: OculusInput pre-init called
+[2017.05.14-14.43.32:049][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.05.14-14.43.32:051][  0]LogSlate: Took 0.000349 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.14-14.43.32:058][  0]LogSlate: Took 0.000507 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.14-14.43.32:067][  0]LogSlate: Took 0.000374 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.14-14.43.32:222][  0]LogSlate: Took 0.000316 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.14-14.43.32:349][  0]LogRenderer: Reallocating scene render targets to support 1056x580 NumSamples 1 (Frame:2).
+[2017.05.14-14.43.32:800][  2]LogAssetRegistry: Asset discovery search completed in 18.1289 seconds
+[2017.05.14-14.43.32:801][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000007 seconds (found 0 objects)
+[2017.05.14-14.43.32:801][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000031 seconds (updated 0 objects)
+[2017.05.14-14.44.38:398][288]LogSlate: Took 0.000340 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.14-14.46.06:291][123]LogSavePackage: Save=37.75ms
+[2017.05.14-14.46.06:292][123]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacterCE93BB4D41CED88EB979F8BA2F9507FB.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-14.46.06:297][123]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-14.46.17:460][874]LogSlate: Took 0.000235 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.14-14.46.17:675][874]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 112 classes and 0 folders.
+[2017.05.14-14.46.22:867][ 58]LogSlate: Took 0.010466 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.14-14.46.27:972][308]LogRenderer: Reallocating scene render targets to support 1056x912 NumSamples 1 (Frame:5590).
+[2017.05.14-14.48.44:245][314]LogSlate: Took 0.000358 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.14-14.48.47:692][701]LogTexture:Display: Building textures: UE4Man_Logo_N (BC5, 512X512) - 80 MB total VRAM
+[2017.05.14-14.48.47:768][701]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_D (DXT1, 512X512) - 80 MB total VRAM
+[2017.05.14-14.48.48:042][701]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_N (BC5, 512X512) - 80 MB total VRAM
+[2017.05.14-14.48.48:127][701]LogTexture:Display: Building textures: T_ML_Aluminum01 (DXT1, 512X512) - 80 MB total VRAM
+[2017.05.14-14.48.48:359][701]LogTexture:Display: Building textures: T_ML_Aluminum01_N (BC5, 512X512) - 80 MB total VRAM
+[2017.05.14-14.48.48:447][701]LogTexture:Display: Building textures: UE4_Mannequin_MAT_MASKA (AutoDXT, 1024X1024) - 80 MB total VRAM
+[2017.05.14-14.48.48:860][701]LogTexture:Display: Building textures: UE4_Mannequin__normals (BC5, 2048X2048) - 80 MB total VRAM
+[2017.05.14-14.48.49:705][701]LogTexture:Display: Building textures: UE4_Mannequin_occlusion_Mobile (DXT1, 512X512) - 80 MB total VRAM
+[2017.05.14-14.48.49:896][701]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2017.05.14-14.48.49:902][701]LogTemp:Display: Added material ShaderMap 0x0000023BBBD30B80 with Material 0x0000023BDBE94580 to ShaderMapsBeingCompiled
+[2017.05.14-14.48.50:091][701]LogTemp:Display: Kicking off shader compilation for M_UE4Man_Body, GameThreadShaderMap 0x0000023BBBD30B80
+[2017.05.14-14.48.50:112][701]LogMaterial: Missing cached shader map for material M_UE4Man_Body, compiling. 
+[2017.05.14-14.48.50:115][701]LogTemp:Display: Added material ShaderMap 0x0000023BDE3B0B80 with Material 0x0000023BDE748580 to ShaderMapsBeingCompiled
+[2017.05.14-14.48.50:254][701]LogTemp:Display: Kicking off shader compilation for M_UE4Man_Body, GameThreadShaderMap 0x0000023BDE3B0B80
+[2017.05.14-14.49.12:984][309]LogTemp:Display: Finished compile of shader map 0x0000023BBBD30B80
+[2017.05.14-14.49.12:984][309]LogTemp:Display: Shader map M_UE4Man_Body complete, GameThreadShaderMap 0x0000023BBBD30B80, marking material M_UE4Man_Body as finished
+[2017.05.14-14.49.12:984][309]LogTemp:Display: Marking material as finished 0x0000023BDBE94580
+[2017.05.14-14.49.29:094][705]LogEditorTransaction: Undo Modify Component(s)
+[2017.05.14-14.49.32:715][941]LogTemp:Display: Finished compile of shader map 0x0000023BDE3B0B80
+[2017.05.14-14.49.32:715][941]LogTemp:Display: Shader map M_UE4Man_Body complete, GameThreadShaderMap 0x0000023BDE3B0B80, marking material M_UE4Man_Body as finished
+[2017.05.14-14.49.32:715][941]LogTemp:Display: Marking material as finished 0x0000023BDE748580
+[2017.05.14-14.51.27:401][329]LogEditorTransaction: Undo Modify Component(s)
+[2017.05.14-14.51.51:759][877]LogEditorTransaction: Undo Modify Component(s)
+[2017.05.14-14.53.45:900][201]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/TestMap' took 0.045
+[2017.05.14-14.53.45:903][201]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Characters/BP_TPS_PlayerCharacter] ([1] browsable assets)...
+[2017.05.14-14.53.45:933][201]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Characters/BP_TPS_PlayerCharacter.BP_TPS_PlayerCharacter]
+[2017.05.14-14.53.45:933][201]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Characters/BP_TPS_PlayerCharacter]
+[2017.05.14-14.53.45:998][201]LogSavePackage: Save=52.68ms
+[2017.05.14-14.53.45:998][201]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter_Auto1DA26D8F147A7F60AED807BB569251DF2.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Autosaves/Game/Blueprints/Characters/BP_TPS_PlayerCharacter_Auto1.uasset'
+[2017.05.14-14.53.46:000][201]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Autosaves/Game/Blueprints/Characters/BP_TPS_PlayerCharacter_Auto1.uasset
+[2017.05.14-14.53.46:001][201]LogFileHelpers: Auto-saving content packages took 0.100
+[2017.05.14-14.55.16:860][884]LogSavePackage: Save=51.28ms
+[2017.05.14-14.55.16:860][884]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter1ADB4FB648BF5232AF9023BB7CF3D144.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-14.55.16:868][884]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-14.55.39:632][917]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.05.14-14.55.48:932][ 24]BlueprintLog: New page: Compile BP_TPS_GameMode
+[2017.05.14-14.55.50:598][183]LogSavePackage: Save=21.41ms
+[2017.05.14-14.55.50:598][183]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_GameModeA0B7A9FA42CD2D671A9D8E8A6B18F5D8.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/GameFiles/BP_TPS_GameMode.uasset'
+[2017.05.14-14.55.50:603][183]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/GameFiles/BP_TPS_GameMode.uasset
+[2017.05.14-14.56.01:066][959]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2017.05.14-14.56.29:759][912]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.14-14.56.29:782][912]BlueprintLog: New page: Pre-Play auto-recompile
+[2017.05.14-14.56.29:782][912]LogPlayLevel: [PlayLevel] Compiling BP_TPS_PlayerCharacter before play...
+[2017.05.14-14.56.30:183][912]LogPlayLevel: PlayLevel: Blueprint regeneration took 401 ms (1 blueprints)
+[2017.05.14-14.56.30:185][912]PIE: New page: PIE session: TestMap (May 14, 2017, 6:56:30 AM)
+[2017.05.14-14.56.30:190][912]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.05.14-14.56.30:195][912]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004523s)
+[2017.05.14-14.56.30:196][912]LogAIModule: Creating AISystem for world TestMap
+[2017.05.14-14.56.30:197][912]LogPlayLevel: PIE: World Init took: (0.001788s)
+[2017.05.14-14.56.30:197][912]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.006888s)
+[2017.05.14-14.56.30:244][912]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-14.56.30:256][912]LogInit: FAudioDevice initialized.
+[2017.05.14-14.56.30:321][912]LogLoad: Game class is 'BP_TPS_GameMode_C'
+[2017.05.14-14.56.30:329][912]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.05.14-10.56.30
+[2017.05.14-14.56.30:332][912]LogWorld: Bringing up level for play took: 0.003274
+[2017.05.14-14.56.30:426][912]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 11 classes and 0 folders.
+[2017.05.14-14.56.30:435][912]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TestMap -0.328
+[2017.05.14-14.56.43:073][702]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.14-14.56.43:095][702]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-14.56.43:096][702]PIE: New page: PIE session: TestMap (May 14, 2017, 6:56:43 AM)
+[2017.05.14-14.56.43:096][702]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.05.14-14.56.43:099][702]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003106s)
+[2017.05.14-14.56.43:100][702]LogAIModule: Creating AISystem for world TestMap
+[2017.05.14-14.56.43:100][702]LogPlayLevel: PIE: World Init took: (0.001556s)
+[2017.05.14-14.56.43:101][702]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.004984s)
+[2017.05.14-14.56.43:142][702]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-14.56.43:153][702]LogInit: FAudioDevice initialized.
+[2017.05.14-14.56.43:190][702]LogLoad: Game class is 'BP_TPS_GameMode_C'
+[2017.05.14-14.56.43:193][702]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.05.14-10.56.43
+[2017.05.14-14.56.43:194][702]LogWorld: Bringing up level for play took: 0.001291
+[2017.05.14-14.56.43:196][702]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TestMap 0.434
+[2017.05.14-14.59.04:362][242]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2017.05.14-14.59.04:453][243]LogTemp:Display: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.SpaceAdventureGame
+
+[2017.05.14-14.59.04:453][243]LogTemp:Display: CWD: C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\DotNET\IOS
+
+[2017.05.14-14.59.04:453][243]LogTemp:Display: Initial Dir: C:\Program Files\Epic Games\UE_4.15
+
+[2017.05.14-14.59.04:453][243]LogTemp:Display: Env CWD: C:\Program Files\Epic Games\UE_4.15\Engine\Binaries\DotNET\IOS
+
+[2017.05.14-14.59.04:453][243]LogTemp:Display: BranchPath = JELBO/C/Program Files/Epic Games/UE_4.15/Engine/Binaries --- GameBranchPath = JELBO/C/Program Files/Epic Games/UE_4.15/Engine/Binaries
+
+[2017.05.14-14.59.04:481][244]LogTemp:Display: IPP ERROR: Application exception: System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Aram\AppData\Local\Apple Computer\MobileDevice\Provisioning Profiles'.
+
+[2017.05.14-14.59.04:481][244]LogTemp:Display:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+
+[2017.05.14-14.59.04:481][244]LogTemp:Display:    at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+
+[2017.05.14-14.59.04:481][244]LogTemp:Display:    at System.IO.Directory.EnumerateFiles(String path, String searchPattern)
+
+[2017.05.14-14.59.04:481][244]LogTemp:Display:    at iPhonePackager.CodeSignatureBuilder.FindProvisions(String CFBundleIdentifier)
+
+[2017.05.14-14.59.04:481][244]LogTemp:Display:    at iPhonePackager.Program.Main(String[] args)
+
+[2017.05.14-15.10.33:081][308]LogSlate: Took 0.007467 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.14-15.12.56:305][ 98]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/TestMap' took 0.038
+[2017.05.14-15.12.56:307][ 98]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Characters/BP_TPS_PlayerCharacter] ([1] browsable assets)...
+[2017.05.14-15.12.56:353][ 98]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Characters/BP_TPS_PlayerCharacter.BP_TPS_PlayerCharacter]
+[2017.05.14-15.12.56:353][ 98]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Characters/BP_TPS_PlayerCharacter]
+[2017.05.14-15.12.56:418][ 98]LogSavePackage: Save=53.23ms
+[2017.05.14-15.12.56:418][ 98]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter_Auto2D76B68C8465EF4D5CCA1DFA23245798C.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Autosaves/Game/Blueprints/Characters/BP_TPS_PlayerCharacter_Auto2.uasset'
+[2017.05.14-15.12.56:421][ 98]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Autosaves/Game/Blueprints/Characters/BP_TPS_PlayerCharacter_Auto2.uasset
+[2017.05.14-15.12.56:422][ 98]LogFileHelpers: Auto-saving content packages took 0.116
+[2017.05.14-15.25.32:885][928]BlueprintLog: New page: Compile BP_TPS_PlayerCharacter
+[2017.05.14-15.25.34:751][ 70]LogSavePackage: Save=65.28ms
+[2017.05.14-15.25.34:751][ 70]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter9B3DC71F4A57115230710C86976AE438.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-15.25.34:757][ 70]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-15.26.12:906][794]BlueprintLog: New page: Compile BP_TPS_PlayerCharacter
+[2017.05.14-15.26.13:271][814]BlueprintLog: New page: Compile BP_TPS_PlayerCharacter
+[2017.05.14-15.26.14:116][878]LogSavePackage: Save=63.65ms
+[2017.05.14-15.26.14:116][878]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter3695F5C24F62AAC36D7D36976ED83DE9.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-15.26.14:122][878]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-15.26.21:592][761]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.14-15.26.21:613][761]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-15.26.21:614][761]PIE: New page: PIE session: TestMap (May 14, 2017, 7:26:21 AM)
+[2017.05.14-15.26.21:614][761]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.05.14-15.26.21:617][761]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002926s)
+[2017.05.14-15.26.21:618][761]LogAIModule: Creating AISystem for world TestMap
+[2017.05.14-15.26.21:618][761]LogPlayLevel: PIE: World Init took: (0.001597s)
+[2017.05.14-15.26.21:619][761]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.004871s)
+[2017.05.14-15.26.21:664][761]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-15.26.21:675][761]LogInit: FAudioDevice initialized.
+[2017.05.14-15.26.21:725][761]LogLoad: Game class is 'BP_TPS_GameMode_C'
+[2017.05.14-15.26.21:728][761]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.05.14-11.26.21
+[2017.05.14-15.26.21:728][761]LogWorld: Bringing up level for play took: 0.001250
+[2017.05.14-15.26.21:733][761]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TestMap 0.971
+[2017.05.14-15.26.21:755][761]LogRenderer: Reallocating scene render targets to support 1292x912 NumSamples 1 (Frame:82777).
+[2017.05.14-15.26.41:053][805]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.14-15.26.41:075][805]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-15.26.41:075][805]PIE: New page: PIE session: TestMap (May 14, 2017, 7:26:41 AM)
+[2017.05.14-15.26.41:075][805]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.05.14-15.26.41:078][805]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003309s)
+[2017.05.14-15.26.41:080][805]LogAIModule: Creating AISystem for world TestMap
+[2017.05.14-15.26.41:080][805]LogPlayLevel: PIE: World Init took: (0.001618s)
+[2017.05.14-15.26.41:080][805]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.005263s)
+[2017.05.14-15.26.41:130][805]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-15.26.41:141][805]LogInit: FAudioDevice initialized.
+[2017.05.14-15.26.41:193][805]LogLoad: Game class is 'BP_TPS_GameMode_C'
+[2017.05.14-15.26.41:196][805]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.05.14-11.26.41
+[2017.05.14-15.26.41:196][805]LogWorld: Bringing up level for play took: 0.001154
+[2017.05.14-15.26.41:201][805]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TestMap 0.439
+[2017.05.14-15.29.33:893][678]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/TestMap' took 0.032
+[2017.05.14-15.29.33:896][678]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Characters/BP_TPS_PlayerCharacter] ([1] browsable assets)...
+[2017.05.14-15.29.33:923][678]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Characters/BP_TPS_PlayerCharacter.BP_TPS_PlayerCharacter]
+[2017.05.14-15.29.33:923][678]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Characters/BP_TPS_PlayerCharacter]
+[2017.05.14-15.29.33:994][678]LogSavePackage: Save=66.66ms
+[2017.05.14-15.29.33:994][678]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter_Auto37433C7374F8C9B59745C8FA7A71AE33F.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Autosaves/Game/Blueprints/Characters/BP_TPS_PlayerCharacter_Auto3.uasset'
+[2017.05.14-15.29.33:997][678]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Autosaves/Game/Blueprints/Characters/BP_TPS_PlayerCharacter_Auto3.uasset
+[2017.05.14-15.29.33:997][678]LogFileHelpers: Auto-saving content packages took 0.103
+[2017.05.14-15.29.35:607][861]BlueprintLog: New page: Compile BP_TPS_PlayerCharacter
+[2017.05.14-15.29.36:558][936]LogSavePackage: Save=67.64ms
+[2017.05.14-15.29.36:558][936]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter66A3578741CF4045C023B2A3FF2E401C.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-15.29.36:563][936]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-15.31.32:927][764]BlueprintLog: New page: Compile BP_TPS_PlayerCharacter
+[2017.05.14-15.31.35:840][ 13]LogSavePackage: Save=70.81ms
+[2017.05.14-15.31.35:840][ 13]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter9934B9CF4675F351F118C6811F70C4F1.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-15.31.35:846][ 13]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-15.31.36:818][106]LogTemp: Repeting last play command: Selected Viewport
+[2017.05.14-15.31.36:841][106]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-15.31.36:841][106]PIE: New page: PIE session: TestMap (May 14, 2017, 7:31:36 AM)
+[2017.05.14-15.31.36:841][106]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_TestMap
+[2017.05.14-15.31.36:844][106]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002850s)
+[2017.05.14-15.31.36:845][106]LogAIModule: Creating AISystem for world TestMap
+[2017.05.14-15.31.36:846][106]LogPlayLevel: PIE: World Init took: (0.001399s)
+[2017.05.14-15.31.36:846][106]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/TestMap.TestMap to /Game/Maps/UEDPIE_0_TestMap.TestMap (0.004648s)
+[2017.05.14-15.31.36:893][106]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-15.31.36:904][106]LogInit: FAudioDevice initialized.
+[2017.05.14-15.31.36:959][106]LogLoad: Game class is 'BP_TPS_GameMode_C'
+[2017.05.14-15.31.36:962][106]LogWorld: Bringing World /Game/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2017.05.14-11.31.36
+[2017.05.14-15.31.36:963][106]LogWorld: Bringing up level for play took: 0.001643
+[2017.05.14-15.31.36:971][106]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_TestMap 0.209
+[2017.05.14-15.33.01:672][298]BlueprintLog: New page: Compile BP_TPS_PlayerCharacter
+[2017.05.14-15.33.02:620][370]LogSavePackage: Save=68.16ms
+[2017.05.14-15.33.02:620][370]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter9E112DA0428C618FC494C8808E26EDFB.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-15.33.02:625][370]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-15.36.50:570][ 55]LogSavePackage: Save=71.49ms
+[2017.05.14-15.36.50:570][ 55]LogSavePackage: Moving '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/BP_TPS_PlayerCharacter0919ACC6493835EC18040CA9923A3151.tmp' to '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset'
+[2017.05.14-15.36.50:572][ 55]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Blueprints/Characters/BP_TPS_PlayerCharacter.uasset
+[2017.05.14-15.36.52:685][231]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-15.36.52:988][232]Cmd: QUIT_EDITOR
+[2017.05.14-15.36.53:553][232]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.05.14-15.36.53:603][232]LogExit: Preparing to exit.
+[2017.05.14-15.36.54:384][232]LogDirectoryWatcher: A directory notification for 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/' was aborted.
+[2017.05.14-15.36.54:433][232]LogExit: Editor shut down
+[2017.05.14-15.36.54:434][232]LogExit: Transaction tracking system shut down
+[2017.05.14-15.36.54:589][232]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.14-15.36.54:589][232]LogExit: Object subsystem successfully closed.
+[2017.05.14-15.36.54:609][232]LogD3D11RHI: Shutdown
+[2017.05.14-15.36.54:609][232]LogD3D11RHI: CleanupD3DDevice
+[2017.05.14-15.36.54:756][232]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.14-15.36.54:805][232]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (506)
+[2017.05.14-15.36.54:805][232]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (504)
+[2017.05.14-15.36.54:805][232]LogModuleManager: Shutting down and abandoning module BlueprintGraph (502)
+[2017.05.14-15.36.54:805][232]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (500)
+[2017.05.14-15.36.54:806][232]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.05.14-15.36.54:806][232]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.05.14-15.36.54:806][232]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.05.14-15.36.54:806][232]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.05.14-15.36.54:806][232]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.14-15.36.54:808][232]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.05.14-15.36.54:808][232]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.05.14-15.36.54:808][232]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.05.14-15.36.54:809][232]LogDirectoryWatcher: A directory notification for 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Collections/' was aborted.
+[2017.05.14-15.36.54:809][232]LogDirectoryWatcher: A directory notification for 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/Developers/Aram/Collections/' was aborted.
+[2017.05.14-15.36.54:809][232]LogDirectoryWatcher: A directory notification for 'C:/Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Saved/Collections/' was aborted.
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.05.14-15.36.54:809][232]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.05.14-15.36.54:810][232]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.05.14-15.36.55:271][232]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.05.14-15.36.55:314][232]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.05.14-15.36.55:326][232]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.05.14-15.36.55:326][232]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.05.14-15.36.55:328][232]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.05.14-15.36.55:355][232]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.05.14-15.36.55:356][232]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.05.14-15.36.55:357][232]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.05.14-15.36.55:357][232]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.05.14-15.36.55:358][232]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.05.14-15.36.55:358][232]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.05.14-15.36.55:359][232]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.05.14-15.36.55:359][232]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.05.14-15.36.55:359][232]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.05.14-15.36.55:359][232]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.05.14-15.36.55:459][232]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.05.14-15.36.55:560][232]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.05.14-15.36.55:564][232]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.05.14-15.36.55:564][232]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.05.14-15.36.55:564][232]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.05.14-15.36.55:564][232]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.05.14-15.36.55:564][232]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.05.14-15.36.55:564][232]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.05.14-15.36.55:622][232]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.14-15.36.55:622][232]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Aram/Desktop/Development Stuff/Github/Space-Adventure-Game/SpaceAdventureGame/Content/' was aborted.
+[2017.05.14-15.36.55:622][232]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.14-15.36.55:622][232]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.05.14-15.36.55:623][232]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.05.14-15.36.55:623][232]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.05.14-15.36.55:624][232]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.05.14-15.36.55:624][232]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.05.14-15.36.55:624][232]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.05.14-15.36.55:624][232]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.05.14-15.36.55:624][232]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.05.14-15.36.55:624][232]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.05.14-15.36.55:707][232]LogDerivedDataCache: Shutdown
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.05.14-15.36.55:707][232]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.14-15.36.55:708][232]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.14-15.36.55:708][232]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.14-15.36.55:708][232]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2017.05.14-15.36.55:708][232]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B67092565-45BC-3C3B-A9A2-EC8CCFFECB06%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=b0ecadd7413e3c51c1da1587d534c8d3%7C81dd7728cb394b9cb6609576e20f33f6%7C8cb51ce3-3643-4f2d-8325-9e0f74ee3f58&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.14-15.36.55:708][232]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B67092565-45BC-3C3B-A9A2-EC8CCFFECB06%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=b0ecadd7413e3c51c1da1587d534c8d3%7C81dd7728cb394b9cb6609576e20f33f6%7C8cb51ce3-3643-4f2d-8325-9e0f74ee3f58&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.14-15.36.55:742][232]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.14-15.36.55:744][232]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.14-15.36.55:744][232]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.14-15.36.55:744][232]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.14-15.36.55:744][232]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.14-15.36.55:744][232]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.14-15.36.55:747][232]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.14-15.36.55:750][232]LogExit: Exiting.
+[2017.05.14-15.36.55:771][232]Log file closed, 05/14/17 11:36:55
